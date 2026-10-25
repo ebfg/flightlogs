@@ -1,0 +1,49 @@
+From: Me <you@example.com>
+To: flights@example.com
+Subject: Fwd: cancelled
+Date: Sun, 18 Oct 2026 14:44:02 -0000
+Message-ID: <179233464265.1260.10282881057868693437@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============0383652776821369076=="
+
+--===============0383652776821369076==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+fyi
+
+--===============0383652776821369076==
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+Content-Disposition: attachment; filename="confirmation.eml"
+MIME-Version: 1.0
+
+From: ANA <noreply@ana.example>
+To: you@example.com
+Subject: Your booking QQ1234 has been cancelled
+Date: Thu, 10 Sep 2026 00:26:40 -0000
+Message-ID: <179233464265.1260.4313137612588546285@ana.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============8148044807717288450=="
+
+--===============8148044807717288450==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Booking QQ1234 cancelled
+
+--===============8148044807717288450==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><script type=3D"application/ld+json">[{"@context": "http://schema=
+.org", "@type": "FlightReservation", "reservationNumber": "QQ1234", "reservat=
+ionStatus": "http://schema.org/ReservationCancelled", "underName": {"@type": =
+"Person", "name": "John Smith"}}]</script></head><body><table><tr><td>Booking=
+ QQ1234 cancelled</td></tr></table></body></html>
+
+--===============8148044807717288450==--
+
+--===============0383652776821369076==--

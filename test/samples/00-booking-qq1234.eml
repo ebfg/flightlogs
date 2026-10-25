@@ -1,0 +1,55 @@
+From: Me <you@example.com>
+To: flights@example.com
+Subject: Fwd: Booking QQ1234
+Date: Sun, 18 Oct 2026 14:44:02 -0000
+Message-ID: <179233464266.1260.15842133916144821017@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============0962555749289444525=="
+
+--===============0962555749289444525==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+fyi
+
+--===============0962555749289444525==
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+Content-Disposition: attachment; filename="confirmation.eml"
+MIME-Version: 1.0
+
+From: ANA <noreply@ana.example>
+To: you@example.com
+Subject: Booking QQ1234
+Date: Thu, 10 Sep 2026 00:26:40 -0000
+Message-ID: <179233464266.1260.9886651587562669921@ana.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============1234230446445478400=="
+
+--===============1234230446445478400==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+QQ1234 HND-ITM
+
+--===============1234230446445478400==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><script type=3D"application/ld+json">[{"@context": "http://schema=
+.org", "@type": "FlightReservation", "reservationNumber": "QQ1234", "reservat=
+ionStatus": "http://schema.org/ReservationConfirmed", "underName": {"@type": =
+"Person", "name": "John Smith"}, "reservationFor": {"@type": "Flight", "fligh=
+tNumber": "2177", "airline": {"@type": "Airline", "name": "All Nippon Airways=
+", "iataCode": "NH"}, "departureAirport": {"@type": "Airport", "name": "Tokyo=
+ Haneda", "iataCode": "HND"}, "departureTime": "2027-04-27T08:00:00+09:00", "=
+arrivalAirport": {"@type": "Airport", "name": "Osaka Itami", "iataCode": "ITM=
+"}, "arrivalTime": "2027-04-27T09:10:00+09:00", "aircraft": null}, "airplaneS=
+eatClass": {"@type": "AirplaneSeatClass", "name": "Economy"}}]</script></head=
+><body><table><tr><td>QQ1234 HND-ITM</td></tr></table></body></html>
+
+--===============1234230446445478400==--
+
+--===============0962555749289444525==--

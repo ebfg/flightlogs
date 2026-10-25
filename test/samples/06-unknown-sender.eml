@@ -1,0 +1,33 @@
+To: you@example.com
+Subject: Totally your flight
+Date: Thu, 10 Sep 2026 00:26:40 -0000
+Message-ID: <179233464267.1260.4780216814344229083@ana.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============1343416665927755277=="
+From: mallory@evil.example
+
+--===============1343416665927755277==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+spam
+
+--===============1343416665927755277==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><script type=3D"application/ld+json">[{"@context": "http://schema=
+.org", "@type": "FlightReservation", "reservationNumber": "EVIL01", "reservat=
+ionStatus": "http://schema.org/ReservationConfirmed", "underName": {"@type": =
+"Person", "name": "Mallory"}, "reservationFor": {"@type": "Flight", "flightNu=
+mber": "9", "airline": {"@type": "Airline", "name": "All Nippon Airways", "ia=
+taCode": "NH"}, "departureAirport": {"@type": "Airport", "name": "New York JF=
+K", "iataCode": "JFK"}, "departureTime": "2027-04-23T11:00:00-04:00", "arriva=
+lAirport": {"@type": "Airport", "name": "Tokyo Narita", "iataCode": "NRT"}, "=
+arrivalTime": "2027-04-24T14:25:00+09:00", "aircraft": "Boeing 777-300ER"}, "=
+airplaneSeatClass": {"@type": "AirplaneSeatClass", "name": "Economy"}}]</scri=
+pt></head><body><table><tr><td>spam</td></tr></table></body></html>
+
+--===============1343416665927755277==--

@@ -1,0 +1,64 @@
+From: ANA <noreply@ana.example>
+To: you@example.com
+Subject: Your ANA booking XQ7K2M is confirmed
+Date: Thu, 10 Sep 2026 00:26:40 -0000
+Message-ID: <179233464264.1260.6219026565920775277@ana.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============0607130168475633427=="
+
+--===============0607130168475633427==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Booking XQ7K2M: NH9 JFK-NRT 23 Apr, NH10 NRT-JFK 2 May
+
+--===============0607130168475633427==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><script type=3D"application/ld+json">[{"@context": "http://schema=
+.org", "@type": "FlightReservation", "reservationNumber": "XQ7K2M", "reservat=
+ionStatus": "http://schema.org/ReservationConfirmed", "underName": {"@type": =
+"Person", "name": "Smith/John Mr"}, "reservationFor": {"@type": "Flight", "fl=
+ightNumber": "9", "airline": {"@type": "Airline", "name": "All Nippon Airways=
+", "iataCode": "NH"}, "departureAirport": {"@type": "Airport", "name": "New Y=
+ork JFK", "iataCode": "JFK"}, "departureTime": "2027-04-23T11:00:00-04:00", "=
+arrivalAirport": {"@type": "Airport", "name": "Tokyo Narita", "iataCode": "NR=
+T"}, "arrivalTime": "2027-04-24T14:25:00+09:00", "aircraft": "Boeing 777-300E=
+R"}, "airplaneSeatClass": {"@type": "AirplaneSeatClass", "name": "Economy"}, =
+"airplaneSeat": "23A", "totalPrice": "2486.40", "priceCurrency": "USD"}, {"@c=
+ontext": "http://schema.org", "@type": "FlightReservation", "reservationNumbe=
+r": "XQ7K2M", "reservationStatus": "http://schema.org/ReservationConfirmed", =
+"underName": {"@type": "Person", "name": "SMITH/JANE MS"}, "reservationFor": =
+{"@type": "Flight", "flightNumber": "9", "airline": {"@type": "Airline", "nam=
+e": "All Nippon Airways", "iataCode": "NH"}, "departureAirport": {"@type": "A=
+irport", "name": "New York JFK", "iataCode": "JFK"}, "departureTime": "2027-0=
+4-23T11:00:00-04:00", "arrivalAirport": {"@type": "Airport", "name": "Tokyo N=
+arita", "iataCode": "NRT"}, "arrivalTime": "2027-04-24T14:25:00+09:00", "airc=
+raft": "Boeing 777-300ER"}, "airplaneSeatClass": {"@type": "AirplaneSeatClass=
+", "name": "Economy"}, "airplaneSeat": "23B", "totalPrice": "2486.40", "price=
+Currency": "USD"}, {"@context": "http://schema.org", "@type": "FlightReservat=
+ion", "reservationNumber": "XQ7K2M", "reservationStatus": "http://schema.org/=
+ReservationConfirmed", "underName": {"@type": "Person", "name": "Smith/John M=
+r"}, "reservationFor": {"@type": "Flight", "flightNumber": "NH 0010", "airlin=
+e": {"@type": "Airline", "name": "All Nippon Airways", "iataCode": "NH"}, "de=
+partureAirport": {"@type": "Airport", "name": "Tokyo Narita", "iataCode": "NR=
+T"}, "departureTime": "2027-05-02T17:00:00+09:00", "arrivalAirport": {"@type"=
+: "Airport", "name": "New York JFK", "iataCode": "JFK"}, "arrivalTime": "2027=
+-05-02T16:40:00-04:00", "aircraft": "77W"}, "airplaneSeatClass": {"@type": "A=
+irplaneSeatClass", "name": "Economy"}}, {"@context": "http://schema.org", "@t=
+ype": "FlightReservation", "reservationNumber": "XQ7K2M", "reservationStatus"=
+: "http://schema.org/ReservationConfirmed", "underName": {"@type": "Person", =
+"name": "SMITH/JANE MS"}, "reservationFor": {"@type": "Flight", "flightNumber=
+": "NH 0010", "airline": {"@type": "Airline", "name": "All Nippon Airways", "=
+iataCode": "NH"}, "departureAirport": {"@type": "Airport", "name": "Tokyo Nar=
+ita", "iataCode": "NRT"}, "departureTime": "2027-05-02T17:00:00+09:00", "arri=
+valAirport": {"@type": "Airport", "name": "New York JFK", "iataCode": "JFK"},=
+ "arrivalTime": "2027-05-02T16:40:00-04:00", "aircraft": "77W"}, "airplaneSea=
+tClass": {"@type": "AirplaneSeatClass", "name": "Economy"}}]</script></head><=
+body><table><tr><td>Booking XQ7K2M: NH9 JFK-NRT 23 Apr, NH10 NRT-JFK 2 May</t=
+d></tr></table></body></html>
+
+--===============0607130168475633427==--

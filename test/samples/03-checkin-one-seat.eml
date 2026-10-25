@@ -1,0 +1,56 @@
+From: Me <you@example.com>
+To: flights@example.com
+Subject: Fwd: Check in for NH10
+Date: Sun, 18 Oct 2026 14:44:02 -0000
+Message-ID: <179233464265.1260.12965363121027288931@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============6938285992913063974=="
+
+--===============6938285992913063974==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+fyi
+
+--===============6938285992913063974==
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+Content-Disposition: attachment; filename="confirmation.eml"
+MIME-Version: 1.0
+
+From: ANA <noreply@ana.example>
+To: you@example.com
+Subject: Check in for NH10
+Date: Fri, 30 Apr 2027 15:46:40 -0000
+Message-ID: <179233464265.1260.15781151858134783445@ana.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============6737737279066450965=="
+
+--===============6737737279066450965==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Check in now for NH10
+
+--===============6737737279066450965==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><script type=3D"application/ld+json">[{"@context": "http://schema=
+.org", "@type": "FlightReservation", "reservationNumber": "XQ7K2M", "reservat=
+ionStatus": "http://schema.org/ReservationConfirmed", "underName": {"@type": =
+"Person", "name": "John Smith"}, "reservationFor": {"@type": "Flight", "fligh=
+tNumber": "NH 0010", "airline": {"@type": "Airline", "name": "All Nippon Airw=
+ays", "iataCode": "NH"}, "departureAirport": {"@type": "Airport", "name": "To=
+kyo Narita", "iataCode": "NRT"}, "departureTime": "2027-05-02T17:00:00+09:00"=
+, "arrivalAirport": {"@type": "Airport", "name": "New York JFK", "iataCode": =
+"JFK"}, "arrivalTime": "2027-05-02T16:40:00-04:00", "aircraft": "77W"}, "airp=
+laneSeatClass": {"@type": "AirplaneSeatClass", "name": "Economy"}, "airplaneS=
+eat": "31C"}]</script></head><body><table><tr><td>Check in now for NH10</td><=
+/tr></table></body></html>
+
+--===============6737737279066450965==--
+
+--===============6938285992913063974==--

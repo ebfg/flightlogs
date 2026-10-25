@@ -1,0 +1,70 @@
+# Receives mail for flights@example.com (Email Routing rule → Send to a Worker → flight-memory).
+# Copy to wrangler.toml (gitignored) and replace every example.com / you@example.com / REPLACE_* value.
+name = "flight-memory"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+# Web UI at https://example.com (custom domain; Cloudflare creates the DNS record on deploy).
+# The domain must be a zone on your Cloudflare account.
+routes = [{ pattern = "example.com", custom_domain = true }]
+
+# The web UI (built from ui/ into public/ by `npm run build:ui`) is served as static assets;
+# only /api/* and /auth/* run the Worker first.
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*", "/auth/*"]
+
+[build]
+command = "npm run build:ui"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "flight-memory"
+# Paste the id printed by `npx wrangler d1 create flight-memory`
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Sends the post-landing seat prompt; locked to this one recipient. Must be a verified
+# destination address in Email Routing, and must equal SEAT_PROMPT_TO below.
+[[send_email]]
+name = "SEAT_EMAIL"
+destination_address = "you@example.com"
+
+# "17 9 * * *" is the daily FlightAware lookup; "*/30 * * * *" is the seat-prompt check.
+# src/index.ts matches the exact string "*/30 * * * *", so keep it as is.
+[triggers]
+crons = ["17 9 * * *", "*/30 * * * *"]
+
+[vars]
+# WebAuthn (passkey) relying party: the UI's domain and its exact origin.
+RP_ID = "example.com"
+ORIGIN = "https://example.com"
+# Comma-separated addresses allowed to forward emails in. Anything else is logged as
+# "rejected" and not parsed (so Gmail's forwarding-verification email is still readable).
+ALLOWED_SENDERS = "you@example.com"
+# Your name as printed on tickets, so the Worker can pick your seat and your share of the
+# cost out of bookings with several passengers. Comma-separate variants if you use more than one.
+MY_NAME = "Jane Smith, Jane A Smith"
+# Model used when an email has no embedded structured flight data (needs ANTHROPIC_API_KEY).
+CLAUDE_MODEL = "claude-haiku-5-5"
+# Set to "false" to stop the Worker replying with a summary of what it saved.
+REPLY_ENABLED = "true"
+
+# Daily FlightAware lookup of tail number / aircraft type for flights that have departed
+# (needs FLIGHTAWARE_API_KEY). Only the string "true" means dry run: it then just logs results
+# to the aircraft_lookups table and leaves flights untouched. Set to "false" to apply them.
+FLIGHTAWARE_DRY_RUN = "true"
+
+# Every 30 minutes the Worker emails a "what seat were you in?" prompt for flights that landed in the last
+# 90 minutes; replying to it sets the seat. Set SEAT_PROMPTS to "false" to turn this off.
+# Prompts are sent only when PROMPT_FROM and SEAT_PROMPT_TO are both set.
+# PROMPT_FROM: sender address, on your Email Routing domain.
+# SEAT_PROMPT_TO: must equal the send_email destination_address above and be a verified Email Routing destination.
+PROMPT_FROM = "flights@example.com"
+SEAT_PROMPT_TO = "you@example.com"
+SEAT_PROMPTS = "true"
+
+# Secrets (set with `npx wrangler secret put <NAME>`; never put them in this file):
+#   API_TOKEN           - required. Bearer token for /api/*; also the setup token for registering the first passkey
+#   ANTHROPIC_API_KEY   - optional. Enables the Claude fallback parser
+#   FLIGHTAWARE_API_KEY - optional. FlightAware AeroAPI key; enables the daily aircraft lookup

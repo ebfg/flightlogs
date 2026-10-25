@@ -1,0 +1,56 @@
+From: Me <you@example.com>
+To: flights@example.com
+Subject: Fwd: Your boarding pass for NH9
+Date: Sun, 18 Oct 2026 14:44:02 -0000
+Message-ID: <179233464266.1260.2779203627731702048@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3693487333272917379=="
+
+--===============3693487333272917379==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+fyi
+
+--===============3693487333272917379==
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+Content-Disposition: attachment; filename="confirmation.eml"
+MIME-Version: 1.0
+
+From: ANA <noreply@ana.example>
+To: you@example.com
+Subject: Your boarding pass for NH9
+Date: Thu, 22 Apr 2027 13:20:00 -0000
+Message-ID: <179233464266.1260.10895758510869844699@ana.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============3522574201570680525=="
+
+--===============3522574201570680525==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Boarding pass NH9 seat 7K Business
+
+--===============3522574201570680525==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><script type=3D"application/ld+json">[{"@context": "http://schema=
+.org", "@type": "FlightReservation", "reservationNumber": "XQ7K2M", "reservat=
+ionStatus": "http://schema.org/ReservationConfirmed", "underName": {"@type": =
+"Person", "name": "Smith/John Mr"}, "reservationFor": {"@type": "Flight", "fl=
+ightNumber": "9", "airline": {"@type": "Airline", "name": "All Nippon Airways=
+", "iataCode": "NH"}, "departureAirport": {"@type": "Airport", "name": "New Y=
+ork JFK", "iataCode": "JFK"}, "departureTime": "2027-04-23T11:00:00-04:00", "=
+arrivalAirport": {"@type": "Airport", "name": "Tokyo Narita", "iataCode": "NR=
+T"}, "arrivalTime": "2027-04-24T14:25:00+09:00", "aircraft": "Boeing 777-300E=
+R"}, "airplaneSeatClass": {"@type": "AirplaneSeatClass", "name": "Business"},=
+ "airplaneSeat": "7K"}]</script></head><body><table><tr><td>Boarding pass NH9=
+ seat 7K Business</td></tr></table></body></html>
+
+--===============3522574201570680525==--
+
+--===============3693487333272917379==--

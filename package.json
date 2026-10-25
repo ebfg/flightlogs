@@ -1,0 +1,36 @@
+{
+  "name": "flight-memory",
+  "version": "1.0.0",
+  "description": "Forward flight confirmation emails to a Cloudflare Email Worker; parsed into D1 (SQLite).",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc -p .",
+    "parse": "tsx test/parse-file.ts",
+    "test:e2e": "bash test/e2e.sh",
+    "db:migrate": "wrangler d1 migrations apply flight-memory --remote",
+    "db:migrate:local": "wrangler d1 migrations apply flight-memory --local",
+    "build:airports": "node scripts/build-airports.mjs",
+    "build:ui": "node ui/build.mjs"
+  },
+  "dependencies": {
+    "@simplewebauthn/browser": "^14.0.0",
+    "@simplewebauthn/server": "^14.0.3",
+    "postal-mime": "^4.0.11"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261018.1",
+    "@photostructure/tz-lookup": "^11.7.0",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.151.1"
+  },
+  "license": "MIT",
+  "repository": "github:ebfg/flightlogs",
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true,
+  "type": "module"
+}
